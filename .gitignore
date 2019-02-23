@@ -5,6 +5,7 @@
 # workspace
 workspace/
 *.log
+*.idea
 
 # rvmdk
 JLink*

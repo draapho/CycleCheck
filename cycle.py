@@ -54,7 +54,7 @@ class circle(QMainWindow, gui_cycle.Ui_MainWindow):
 
     def read_file(self):
         # 读取数据
-        print ("read_file, {}".format(self.file)) # /////////////////
+        # print ("read_file, {}".format(self.file))
         reader = TdxDailyBarReader()
         self.df = reader.get_df(self.file)
         # print (self.df.index)
@@ -70,7 +70,7 @@ class circle(QMainWindow, gui_cycle.Ui_MainWindow):
         self.dateEdit_end.setDate(end)
         self.dateEdit_end.setMinimumDate(start)
         self.dateEdit_end.setMaximumDate(end)
-        print ("read_file end, {}, {}".format(start, end)) # /////////////////
+        # print ("read_file end, {}, {}".format(start, end))
         self.read_ticker(start, end)
 
     def read_ticker(self, start, end):
